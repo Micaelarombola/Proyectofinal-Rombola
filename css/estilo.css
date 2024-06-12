@@ -1,0 +1,341 @@
+/*VARIABLES*/
+header {
+  background-color: pink;
+  padding: 55px 0; }
+  header nav {
+    margin-left: auto; }
+    header nav div a img {
+      max-width: 200px; }
+    header nav div div ul li a {
+      color: #000000;
+      margin-right: 50px; }
+
+/*INDEX*/
+.banner {
+  background-image: url(../assets/belleza.png);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  main section div {
+    z-index: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    main section div h1 {
+      margin-bottom: 15px;
+      font-size: 50px; }
+    main section div p {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      margin-bottom: 10px;
+      text-align: center; }
+    main section div button {
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 25px; }
+
+main div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid pink;
+  border-radius: 20px;
+  padding: 20px 20px 10px;
+  margin-bottom: 20px; }
+  main div img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; }
+  main div p {
+    font-size: 20px;
+    line-height: 1.5; }
+
+main div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid pink;
+  border-radius: 20px;
+  padding: 20px 20px 10px;
+  margin-bottom: 20px; }
+  main div img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; }
+  main div p {
+    font-size: 20px;
+    line-height: 1.5; }
+
+main div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid pink;
+  border-radius: 20px;
+  padding: 10px 20px 20px; }
+  main div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; }
+  main div h3 {
+    text-align: center;
+    font-size: 30px; }
+  main div p {
+    background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px; }
+
+/*NOSOTROS*/
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.main-content {
+  padding: 50px 0;
+}
+
+.main-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-content .elemento {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-content .elemento img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-content h2, .main-content h3 {
+  color: #333;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+}
+
+.servicios {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicio-item {
+  margin-bottom: 30px;
+}
+
+.servicio-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+/*CORPORALES*/
+main {
+  text-align: center;
+  padding: 50px 0; }
+  main h1 {
+    font-size: 40px;
+    color: purple; }
+  main h2 {
+    font-size: 30px;
+    color: black;
+    margin-top: 20px; }
+  main div {
+    margin-top: 40px; }
+    main div img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px; }
+    main div p {
+      font-size: 25px;
+      color: purple; }
+  main div img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; }
+  main div p {
+    font-size: 25px;
+    color: purple; }
+  main div img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; }
+  main div p {
+    font-size: 25px;
+    color: purple; }
+
+/*FACIALES*/
+main {
+  text-align: center;
+  padding: 50px 0; }
+  main h1 {
+    font-size: 40px;
+    color: purple; }
+  main h2 {
+    font-size: 24px;
+    color: black;
+    margin-top: 20px; }
+  main div {
+    margin-top: 40px; }
+    main div img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px; }
+    main div p {
+      font-size: 25px;
+      color: purple; }
+
+/*CONTACTO*/
+main h1 {
+  font-size: 36px;
+  color: purple; }
+
+main h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 20px; }
+
+main div h3 {
+  font-size: 20px;
+  color: purple;
+  margin-top: 30px; }
+
+main div iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
+  margin: 20px 0; }
+
+main h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 50px; }
+
+main form {
+  max-width: 600px;
+  margin: 0 auto; }
+  main form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; }
+  main form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; }
+  main form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; }
+  main form .btnFormulario {
+    background-color: purple;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; }
+
+footer {
+  background-color: pink;
+  margin: 20px;
+  pad: 20px;
+  border-top: 1 px solid black;
+  text-align: center; }
+  footer div {
+    margin: 20px;
+    font-size: 15px; }
+    footer div div {
+      font-size: 20px; }
+    footer div div a img {
+      width: 60px;
+      height: 60px; }
+
+
+/* lo hacemos responsive */
+/* 768px hasta 1023px */
+
+@media (max-width:1023px) {
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .tratFacial,.tratCorporal, .voucher{
+      text-align: center;
+  }
+  
+}
