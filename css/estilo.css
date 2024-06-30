@@ -1,341 +1,522 @@
-/*VARIABLES*/
-header {
-  background-color: pink;
-  padding: 55px 0; }
-  header nav {
-    margin-left: auto; }
-    header nav div a img {
-      max-width: 200px; }
-    header nav div div ul li a {
-      color: #000000;
-      margin-right: 50px; }
+/* VARIABLES */
+body {
+    background-image: linear-gradient(to right top, #fbfbfb, #e6d7f5, #e0afe4, #e182c6, #e34c9b);
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/*INDEX*/
+header {
+    background-color: pink;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: violet;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+header:hover::after,
+header:focus::after,
+header:active::after {
+    opacity: 1;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav div a img {
+    max-width: 200px;
+}
+
+header nav div div ul li a {
+    color: #000000;
+    margin-right: 50px;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Ajusta el sombreado hacia abajo según tu diseño */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor del sombreado */
+    background-color: violet; /* Color del sombreado */
+    transform: scaleX(0); /* Inicialmente oculto */
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1); /* Muestra el sombreado al pasar el cursor */
+}
+
+.navbar-nav .nav-link:hover {
+    color: violet; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* INDEX */
 .banner {
-  background-image: url(../assets/belleza.png);
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
-  main section div {
-    z-index: 10px;
+    background-image: url(../assets/belleza.png);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+main .bannerContenido {
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px; }
-    main section div h1 {
-      margin-bottom: 15px;
-      font-size: 50px; }
-    main section div p {
-      font-size: 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: Arial, Helvetica, sans-serif;
-      color: black;
-      margin-bottom: 10px;
-      text-align: center; }
-    main section div button {
-      margin-top: 10px;
-      text-decoration: none;
-      font-size: 25px; }
-
-main div {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid pink;
-  border-radius: 20px;
-  padding: 20px 20px 10px;
-  margin-bottom: 20px; }
-  main div img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px; }
-  main div p {
-    font-size: 20px;
-    line-height: 1.5; }
-
-main div {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid pink;
-  border-radius: 20px;
-  padding: 20px 20px 10px;
-  margin-bottom: 20px; }
-  main div img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px; }
-  main div p {
-    font-size: 20px;
-    line-height: 1.5; }
-
-main div {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid pink;
-  border-radius: 20px;
-  padding: 10px 20px 20px; }
-  main div img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px; }
-  main div h3 {
-    text-align: center;
-    font-size: 30px; }
-  main div p {
-    background-color: pink;
-    color: black;
-    text-align: center;
     padding: 10px;
-    font-weight: bold;
-    font-size: 20px; }
+    text-align: center; 
+    color: black; 
+  }
+  
+  main .bannerContenido h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+  }
+  
+  main .bannerContenido p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  main .bannerContenido button {
+    margin-top: 10px;
+    font-size: 25px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  main h2 {
+    font-size: 30px;
+    color: purple; 
+    margin-top: 40px; 
+  }
+  
+  main p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  main .tratFacial,
+  main .tratCorporal,
+  main .voucher {
+    margin-top: 40px; 
+    text-align: center; 
+  }
+  
+  main .tratFacial h3,
+  main .tratCorporal h3,
+  main .voucher h3 {
+    font-size: 25px;
+    color: purple; 
+    margin-bottom: 10px; 
+  }
+  
+  main .tratFacial img,
+  main .tratCorporal img,
+  main .voucher img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+  }
+  
+  main .tratFacial p,
+  main .tratCorporal p,
+  main .voucher p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+    main div {
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid pink;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px; 
+  }
+  
+  main div img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; 
+  }
+  main .tratFacial img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
 
-/*NOSOTROS*/
+main .tratCorporal img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+main .voucher img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /
+}
+  .tratFacial img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px purple);
+  }  
+
+  .tratCorporal img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px purple);
+  }
+  .voucher img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px purple);
+
+
+  }
+  main div p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+/* NOSOTROS */
 /* Reset de estilos */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
-  background-color: #fff;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand img {
-  max-height: 50px;
+header .navbar-brand img {
+    max-height: 50px;
 }
+
 
 .main-content {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 .main-content h1 {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .main-content .elemento {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .main-content .elemento img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.main-content h2, .main-content h3 {
-  color: #333;
-}
+
 
 .main-content p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .servicios {
-  text-align: center;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.servicio-item {
-  margin-bottom: 30px;
+.servicios .servicio-item {
+    margin-bottom: 30px;
 }
 
-.servicio-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+.servicios .servicio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-
-
-/*CORPORALES*/
+/* CORPORALES */
 main {
-  text-align: center;
-  padding: 50px 0; }
-  main h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+main h1 {
     font-size: 40px;
-    color: purple; }
-  main h2 {
+    color: purple;
+    transition: color 0.3s ease;
+}
+
+main h2 {
     font-size: 30px;
     color: black;
-    margin-top: 20px; }
-  main div {
-    margin-top: 40px; }
-    main div img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px; }
-    main div p {
-      font-size: 25px;
-      color: purple; }
-  main div img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; }
-  main div p {
-    font-size: 25px;
-    color: purple; }
-  main div img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; }
-  main div p {
-    font-size: 25px;
-    color: purple; }
+    margin-top: 20px;
+    transition: color 0.3s ease, margin-top 0.3s ease;
+}
 
-/*FACIALES*/
+main div {
+    margin-top: 40px;
+    transition: margin-top 0.3s ease;
+}
+
+main div img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main div p {
+    font-size: 25px;
+    color: purple;
+    transition: color 0.3s ease;
+}
+
+main h1:hover {
+    color: violet; 
+}
+
+main h2:hover {
+    color: darkslategray; 
+    margin-top: 10px; 
+}
+
+main div:hover {
+    margin-top: 30px; /
+}
+
+main div img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+main div p:hover {
+    color: plum; 
+}
+
+/* FACIALES */
 main {
-  text-align: center;
-  padding: 50px 0; }
-  main h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+main h1 {
     font-size: 40px;
-    color: purple; }
-  main h2 {
+    color: purple;
+}
+
+main h2 {
     font-size: 24px;
     color: black;
-    margin-top: 20px; }
-  main div {
-    margin-top: 40px; }
-    main div img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px; }
-    main div p {
-      font-size: 25px;
-      color: purple; }
+    margin-top: 20px;
+}
 
-/*CONTACTO*/
+main div {
+    margin-top: 40px;
+}
+
+main div img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+main div p {
+    font-size: 25px;
+    color: purple;
+}
+
+/* CONTACTO */
+/* Estilos para la sección "main" */
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
 main h1 {
-  font-size: 36px;
-  color: purple; }
+    font-size: 36px;
+    color: purple;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Transiciones suaves para tamaño de fuente y color */
+}
 
 main h2 {
-  font-size: 24px;
-  color: black;
-  margin-top: 20px; }
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+    transition: font-size 0.3s ease, color 0.3s ease, margin-top 0.3s ease; /* Transiciones suaves para tamaño de fuente, color y margen superior */
+}
 
 main div h3 {
-  font-size: 20px;
-  color: purple;
-  margin-top: 30px; }
+    font-size: 20px;
+    color: purple;
+    margin-top: 30px;
+    transition: font-size 0.3s ease, color 0.3s ease, margin-top 0.3s ease; /* Transiciones suaves para tamaño de fuente, color y margen superior */
+}
 
 main div iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 450px;
-  border: 0;
-  margin: 20px 0; }
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    margin: 20px 0;
+}
 
-main h2 {
-  font-size: 28px;
-  color: #333;
-  margin-top: 50px; }
+main h2:hover {
+    font-size: 28px; 
+    color: #333; 
+    margin-top: 15px; 
+}
 
 main form {
-  max-width: 600px;
-  margin: 0 auto; }
-  main form label {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main form label {
     display: block;
     margin-top: 10px;
     font-size: 16px;
-    color: #333; }
-  main form input {
+    color: #333;
+}
+
+main form input,
+main form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; }
-  main form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; }
-  main form .btnFormulario {
+    box-sizing: border-box;
+}
+
+main form .btnFormulario {
     background-color: purple;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px; }
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
 
+main form .btnFormulario:hover {
+    background-color: #7e1eff; 
+    transform: scale(1.05); 
+}
 footer {
-  background-color: pink;
-  margin: 20px;
-  pad: 20px;
-  border-top: 1 px solid black;
-  text-align: center; }
-  footer div {
+    background-color: pink;
     margin: 20px;
-    font-size: 15px; }
-    footer div div {
-      font-size: 20px; }
-    footer div div a img {
-      width: 60px;
-      height: 60px; }
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
 
+footer div {
+    margin: 20px;
+    font-size: 15px;
+}
 
-/* lo hacemos responsive */
+footer div div {
+    font-size: 20px;
+}
+
+footer div div a img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Responsive */
 /* 768px hasta 1023px */
+@media (max-width: 1023px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-@media (max-width:1023px) {
-  
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  header{
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  nav ul li{
-    flex-direction: column;
-    align-items: flex-start;
+    nav ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-    .tratFacial,.tratCorporal, .voucher{
-      text-align: center;
-  }
-  
+    .tratFacial,
+    .tratCorporal,
+    .voucher {
+        text-align: center;
+    }
 }
