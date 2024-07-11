@@ -50,6 +50,7 @@ header nav div div ul li a {
     color: #000000;
     margin-right: 50px;
 }
+
 .navbar-nav .nav-link {
     position: relative;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -58,22 +59,22 @@ header nav div div ul li a {
 .navbar-nav .nav-link::before {
     content: '';
     position: absolute;
-    bottom: -4px; /* Ajusta el sombreado hacia abajo según tu diseño */
+    bottom: -4px;
     left: 0;
     width: 100%;
-    height: 2px; /* Grosor del sombreado */
-    background-color: violet; /* Color del sombreado */
-    transform: scaleX(0); /* Inicialmente oculto */
+    height: 2px;
+    background-color: violet;
+    transform: scaleX(0);
     transition: transform 0.3s ease;
     transform-origin: center;
 }
 
 .navbar-nav .nav-link:hover::before {
-    transform: scaleX(1); /* Muestra el sombreado al pasar el cursor */
+    transform: scaleX(1);
 }
 
 .navbar-nav .nav-link:hover {
-    color: violet; /* Cambia el color del texto al pasar el cursor */
+    color: violet;
 }
 
 /* INDEX */
@@ -89,7 +90,6 @@ header nav div div ul li a {
     background-attachment: fixed;
 }
 
-
 main .bannerContenido {
     z-index: 10;
     display: flex;
@@ -97,24 +97,25 @@ main .bannerContenido {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    text-align: center; 
-    color: black; 
-  }
-  
-  main .bannerContenido h1 {
+    text-align: center;
+    color: white;
+}
+
+main .bannerContenido h1 {
     margin-bottom: 15px;
     font-size: 50px;
-  }
-  
-  main .bannerContenido p {
+    color: rgb(43, 3, 43);
+}
+
+main .bannerContenido p {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-  }
-  
-  main .bannerContenido button {
+}
+
+main .bannerContenido button {
     margin-top: 10px;
     font-size: 25px;
     background-color: purple;
@@ -123,102 +124,105 @@ main .bannerContenido {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  main h2 {
+}
+
+main h2 {
     font-size: 30px;
-    color: purple; 
-    margin-top: 40px; 
-  }
-  
-  main p {
+    color: purple;
+    margin-top: 40px;
+}
+
+main p {
     font-size: 20px;
     line-height: 1.5;
-  }
-  
-  main .tratFacial,
-  main .tratCorporal,
-  main .voucher {
-    margin-top: 40px; 
-    text-align: center; 
-  }
-  
-  main .tratFacial h3,
-  main .tratCorporal h3,
-  main .voucher h3 {
+}
+
+main .tratFacial,
+main .tratCorporal,
+main .voucher {
+    margin-top: 40px;
+    text-align: center;
+}
+
+main .tratFacial h3,
+main .tratCorporal h3,
+main .voucher h3 {
     font-size: 25px;
-    color: purple; 
-    margin-bottom: 10px; 
-  }
-  
-  main .tratFacial img,
-  main .tratCorporal img,
-  main .voucher img {
+    color: purple;
+    margin-bottom: 10px;
+}
+
+main .tratFacial img,
+main .tratCorporal img,
+main .voucher img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px; 
-  }
-  
-  main .tratFacial p,
-  main .tratCorporal p,
-  main .voucher p {
+    margin-bottom: 20px;
+}
+
+main .tratFacial p,
+main .tratCorporal p,
+main .voucher p {
     font-size: 18px;
     line-height: 1.5;
-  }
-    main div {
+}
+
+main div {
     width: 50%;
     margin: 0 auto;
     border: 5px solid pink;
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 20px; 
-  }
-  
-  main div img {
+    margin-bottom: 20px;
+}
+
+main div img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; 
-  }
-  main .tratFacial img {
-    max-width: 300px; 
+    margin-top: 20px;
+}
+
+main .tratFacial img {
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 main .tratCorporal img {
-    max-width: 300px; 
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 main .voucher img {
-    max-width: 300px; 
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px; /
+    margin-bottom: 20px;
 }
-  .tratFacial img:hover {
+
+.tratFacial img:hover {
     transform: scale(1.1);
     filter: drop-shadow(2px 2px 5px purple);
-  }  
+}
 
-  .tratCorporal img:hover{
+.tratCorporal img:hover {
     transform: scale(1.1);
     filter: drop-shadow(2px 2px 5px purple);
-  }
-  .voucher img:hover{
+}
+
+.voucher img:hover {
     transform: scale(1.1);
     filter: drop-shadow(2px 2px 5px purple);
+}
 
-
-  }
-  main div p {
+main div p {
     font-size: 20px;
     line-height: 1.5;
-  }
+}
 
 /* NOSOTROS */
 /* Reset de estilos */
@@ -258,7 +262,6 @@ header .navbar-brand img {
     max-height: 50px;
 }
 
-
 .main-content {
     padding: 50px 0;
 }
@@ -278,8 +281,6 @@ header .navbar-brand img {
     height: auto;
     margin-bottom: 20px;
 }
-
-
 
 .main-content p {
     margin-bottom: 20px;
@@ -340,183 +341,191 @@ main div p {
 }
 
 main h1:hover {
-    color: violet; 
+    color: violet;
 }
 
 main h2:hover {
-    color: darkslategray; 
-    margin-top: 10px; 
+    color: darkslategray;
+    margin-top: 10px;
 }
 
 main div:hover {
-    margin-top: 30px; /
+    margin-top: 30px;
 }
 
 main div img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main div p:hover {
-    color: plum; 
+    color: darkslategray;
 }
 
-/* FACIALES */
-main {
-    text-align: center;
-    padding: 50px 0;
+/*FACIALES*/
+.contenedorFaciales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 5px solid pink;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-main h1 {
-    font-size: 40px;
-    color: purple;
-}
-
-main h2 {
-    font-size: 24px;
-    color: black;
-    margin-top: 20px;
-}
-
-main div {
-    margin-top: 40px;
-}
-
-main div img {
-    width: 100%;
-    max-width: 400px;
+.contenedorFaciales img {
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-main div p {
-    font-size: 25px;
+.contenedorFaciales p {
+    font-size: 18px;
     color: purple;
 }
 
-/* CONTACTO */
-/* Estilos para la sección "main" */
-main {
+.contenedorFaciales:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorFaciales img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px purple);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 50px 0;
 }
 
-main h1 {
-    font-size: 36px;
-    color: purple;
-    transition: font-size 0.3s ease, color 0.3s ease; /* Transiciones suaves para tamaño de fuente y color */
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header .navbar-brand img {
+        max-height: 40px;
+    }
+
+    header .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content .elemento img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .servicios .servicio-item img {
+        max-width: 80%;
+    }
+
+    main .tratFacial,
+    main .tratCorporal,
+    main .voucher {
+        width: 80%;
+    }
 }
 
-main h2 {
-    font-size: 24px;
-    color: black;
-    margin-top: 20px;
-    transition: font-size 0.3s ease, color 0.3s ease, margin-top 0.3s ease; /* Transiciones suaves para tamaño de fuente, color y margen superior */
+@media (max-width: 576px) {
+    header .navbar-brand img {
+        max-height: 30px;
+    }
+
+    header .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content .elemento img {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .servicios .servicio-item img {
+        max-width: 100%;
+    }
+
+    main .tratFacial,
+    main .tratCorporal,
+    main .voucher {
+        width: 100%;
+    }
 }
 
-main div h3 {
-    font-size: 20px;
-    color: purple;
-    margin-top: 30px;
-    transition: font-size 0.3s ease, color 0.3s ease, margin-top 0.3s ease; /* Transiciones suaves para tamaño de fuente, color y margen superior */
-}
-
-main div iframe {
-    width: 100%;
+/* Formulario */
+.form-container {
     max-width: 600px;
-    height: 450px;
-    border: 0;
-    margin: 20px 0;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main h2:hover {
-    font-size: 28px; 
-    color: #333; 
-    margin-top: 15px; 
-}
-
-main form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-main form label {
+.form-container label {
+    font-size: 18px;
+    color: purple;
+    margin-bottom: 8px;
     display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
 }
 
-main form input,
-main form textarea {
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
-}
-
-main form .btnFormulario {
-    background-color: purple;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-main form .btnFormulario:hover {
-    background-color: #7e1eff; 
-    transform: scale(1.05); 
-}
-footer {
-    background-color: pink;
-    margin: 20px;
-    padding: 20px;
-    border-top: 1px solid black;
-    text-align: center;
-}
-
-footer div {
-    margin: 20px;
-    font-size: 15px;
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
 }
 
-footer div div {
-    font-size: 20px;
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: violet;
 }
 
-footer div div a img {
-    width: 60px;
-    height: 60px;
+/* Redes Sociales */
+.redesSociales {
+    margin-top: 10px;
 }
 
-/* Responsive */
-/* 768px hasta 1023px */
-@media (max-width: 1023px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+.redesSociales a {
+    margin: 0 10px;
+}
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.redesSociales img {
+    max-width: 40px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
 
-    nav ul li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .tratFacial,
-    .tratCorporal,
-    .voucher {
-        text-align: center;
-    }
+.redesSociales img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 5px purple);
 }
